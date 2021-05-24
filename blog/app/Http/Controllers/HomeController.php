@@ -8,12 +8,12 @@ class HomeController extends Controller
 {
     function Home()
     {
-        return "controller home method";
+        return view('HomePage');
     }
 
     function About()
     {
-        return "controller about method";
+        return view('doctor');
     }
     function contact()
     {
