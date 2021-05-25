@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class democontroller extends Controller
 {
-    function myname($namevalue)
+    function myname($firstname,$middlename,$lastname)
     {
-        return $namevalue ;
+        return view('myname',['fkey'=>$firstname,'mkey'=>$middlename,'lkey'=>$lastname]) ;
     }
 }
